@@ -1,6 +1,6 @@
 import pickle
 
-# Função para adicionar um novo contato
+
 def adicionar_contato():
     nome = input("Digite o nome do contato: ")
     telefone = input("Digite o número de telefone: ")
@@ -17,7 +17,7 @@ def adicionar_contato():
     
     print(f"Contato {nome} foi adicionado com sucesso.")
 
-# Função para listar todos os contatos
+
 def listar_contatos():
     try:
         with open('contatos.bin', 'rb') as arquivo:
@@ -34,7 +34,7 @@ def listar_contatos():
     except FileNotFoundError:
         print("Ainda não existem contatos salvos.")
 
-# Menu principal
+
 while True:
     print("\n=== Agenda de Contatos ===")
     print("1. Adicionar Contato")
